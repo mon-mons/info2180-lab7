@@ -4,7 +4,7 @@ header{
     grid-row-start: 1;
     justify-content:center;
     align-items: center;
-    background-color: rgb(19, 19, 82);
+    background-color:#201899;
     color: white;
     height:100%;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -18,12 +18,75 @@ body{
 
 }
 
-main{ 
+main{
+    display: grid;
+    grid-template-rows: 35px auto;
     grid-row-start: 2;
-
+    
 }
 
 #lookup{
     background-color: blue;
 
+
+}
+#controls{
+    display:flex;
+    grid-row-start: 1;
+    justify-content:center;
+    align-items: center;
+}
+
+#result{
+    display:flex;
+    grid-row-start: 2;
+    justify-content:center;
+    align-items: center;
+}
+
+table {
+    color: #201899;
+    border-collapse: collapse;
+    width: 1000px;
+    margin: 20px;
+}
+
+#lookup {
+    height: 25px;
+    background-color: #201899;
+    border-color: black;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+}
+
+#lookupcities {
+    height: 25px;
+    background-color: #201899;
+    border-color: black;
+    border-radius: 5px;
+    color: white;
+    margin: 5px;
+}
+
+#country {
+    height: 25px;
+    width: 500px;
+    margin: 5px;
+}
+
+table, th, td {
+    border: 1px solid #201899;
+    text-align: center;
+    vertical-align: center;
+}
+
+th {
+    height: 50px;
+    background-color: #201899;
+    color: white;
+}
+
+td {
+    height: 30px;
 }
