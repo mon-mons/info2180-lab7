@@ -1,1 +1,29 @@
 /* Add your own styles */
+header{
+    display:flex;
+    grid-row-start: 1;
+    justify-content:center;
+    align-items: center;
+    background-color: rgb(19, 19, 82);
+    color: white;
+    height:100%;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    display: grid;
+    grid-template-rows: 160px auto;
+    grid-gap: 20px;
+    background-color: rgb(158, 210, 255);
+
+}
+
+main{ 
+    grid-row-start: 2;
+
+}
+
+#lookup{
+    background-color: blue;
+
+}
