@@ -15,11 +15,26 @@ if($_SERVER['REQUEST_METHOD'] === 'GET' ){
 
     $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-    echo "<ul>";
+    echo "<table>";
+    echo "<tr>";
+    echo "<th>Country Name</th>";
+    echo "<th>Continent</th>";
+    echo "<th>Independence Year</th>";
+    echo "<th>Head of State</th>";
+    echo "</tr>";
     foreach($results as $row) {
-      echo "<li>" .  $row['name'] . ' is ruled by ' . $row['head_of_state'] . "</li>";
+      $country = $row['name'];
+      $continent = $row['continent'];
+      $ind_Year = $row['independence_year'];
+      $hos = $row['head_of_state'];
+      echo "<tr>";
+      echo "<td>$country</td>";
+      echo "<td>$continent</td>";
+      echo "<td>$ind_Year</td>";
+      echo "<td>$hos</td>";
+      echo "</tr>";
     }
-    echo "</ul>";
-    
+    echo "</table>";
+
   }
 }
